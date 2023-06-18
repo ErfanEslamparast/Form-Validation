@@ -1,0 +1,64 @@
+@font-face {
+    font-family: vazir;
+    src: url(./font/Vazir.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    direction: rtl;
+    background-color: rgb(52, 52, 153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:vazir;
+}
+.form-container{
+    width: 350px;
+    height: 600px;
+    background-color: rgb(244, 239, 232);
+}
+header{
+    background-color: rgb(198, 197, 196);
+    padding:15px;
+    text-align: center;
+    color: rgb(12, 12, 126);
+}
+.form{
+    padding:5px 20px;
+}
+form .form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+form .form-control input{
+    margin-top: 10px;
+    padding: 7px;
+}
+form button{
+    background-color: rgb(12, 12, 126);
+    color: white;
+    padding: 8px 134px;
+    margin-top: 20px;
+    font-family: vazir;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-control small{
+    color: #ef5350;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.success input{
+    border-color: #66bb6a;
+}
+.form-control.error input{
+    border-color: #ef5350;
+}
